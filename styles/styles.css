@@ -1,3 +1,44 @@
+/* Styles for mobile screens */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  .controls .control {
+    margin: 10px;
+    font-size: 24px;
+    color: var(--color-white);
+    transition: all 0.3s ease;
+  }
+}
+
+.right-header {
+  position: relative;
+  margin-bottom: 100px; 
+}
+
+.controls {
+  position: fixed; 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -153,24 +194,4 @@ header {
 .controls .control:hover {
   font-size: 40px;   
   transform: scale(1.2); 
-}
-
-/* Styles for mobile screens */
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  .controls {
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    margin-left: 40px;
-    margin-top: 0;
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-  }
-
-  .controls .control {
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
 }
