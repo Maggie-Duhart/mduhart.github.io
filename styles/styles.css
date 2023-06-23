@@ -155,3 +155,22 @@ header {
   transform: scale(1.2); 
 }
 
+/* Styles for mobile screens */
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .controls {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 0;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .controls .control {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
