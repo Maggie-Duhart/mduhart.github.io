@@ -1,30 +1,47 @@
 /* Styles for mobile screens */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 768px) {
   body {
     position: relative;
-    padding-bottom: 100px; 
+    padding-bottom: 120px; 
   }
 
   .controls {
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    position: absolute;
-    right: 90px;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    transform: translateX(-50%);
   }
 
   .controls .control {
-    margin-left: 20px;
-    margin-bottom: 0;
-    font-size: 24px; 
+    font-size: 24px;
+    margin: 0 10px;
     color: var(--color-white);
     transition: all 0.3s ease;
   }
 }
+
+/* Styles for tablets and small desktop screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .controls {
+    justify-content: flex-end;
+    margin-top: -40px;
+    right: 40%; 
+    transform: translateX(50%);
+  }
+}
+
+/* Styles for larger desktop screens */
+@media screen and (min-width: 1025px) {
+  .controls {
+    justify-content: flex-end;
+    margin-right: 50px;
+    right: 10%; 
+    margin-top: -240px;
+  }
+}
+
 
 * {
   margin: 0;
@@ -67,7 +84,6 @@ header {
   background: var(--color-primary) center/cover no-repeat;
 }
 
-
 .header-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -77,7 +93,6 @@ header {
   height: 100%;
   padding: 0 100px; 
 }
-
 
 .header-content .left-header {
   position: relative;
@@ -182,3 +197,4 @@ header {
   font-size: 40px;   
   transform: scale(1.2); 
 }
+
