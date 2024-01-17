@@ -2,7 +2,7 @@
 @media screen and (max-width: 768px) {
   body {
     position: relative;
-    padding-bottom: 120px; 
+    padding-bottom: 120px;
   }
 
   .controls {
@@ -35,12 +35,29 @@
 
   .header-content .left-header {
     order: 2;
-    width: 100%;
-    margin-left: 0;
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
 
   .header-content .left-header .image {
-    margin: 0 auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    margin-left: 0;
+  }
+
+  .header-content .left-header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(100%);
+  }
+
+  .header-content .left-header .image:hover img {
+    filter: grayscale(0);
   }
 
   .header-content .right-header {
@@ -59,7 +76,7 @@
   .controls {
     justify-content: flex-end;
     margin-top: -40px;
-    right: 40%; 
+    right: 40%;
     transform: translateX(50%);
   }
 }
@@ -69,7 +86,7 @@
   .controls {
     justify-content: flex-end;
     margin-right: 50px;
-    right: 10%; 
+    right: 10%;
     margin-top: -240px;
   }
 }
@@ -122,7 +139,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 100px; 
+  padding: 0 100px;
 }
 
 .header-content .left-header {
@@ -146,7 +163,6 @@ header {
   border-radius: 50%;
   height: 50%;
   width: 50%;
-  margin-left: 4rem;
   overflow: hidden;
 }
 
@@ -218,16 +234,17 @@ header {
 }
 
 .controls .control {
-  font-size: 34px; 
-  margin-left: 20px; 
+  font-size: 34px;
+  margin-left: 20px;
   color: var(--color-white);
   transition: all 0.3s ease;
 }
 
 .controls .control:hover {
-  font-size: 40px;   
-  transform: scale(1.2); 
+  font-size: 40px;
+  transform: scale(1.2);
 }
 
 /* Add more styling as needed */
+
 
