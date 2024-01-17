@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom stylesheet -->
 </head>
 <body class="main-content">
+
     <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/md_pic.png" alt="">
-                </div>
+                <img src="img/md_pic.png" alt="Maggie Duhart">
             </div>
             <div class="right-header">
                 <h1 class="name">
@@ -29,18 +28,6 @@
                     I'm an enthusiastic developer actively seeking collaborative opportunities on compelling projects.
                     Feel free to contact me! 
                 </p>
-                <div class="grid-container">
-                  <div class="grid-item">1</div>
-                    <section>
-                        <h1>ProjectOne</h1>
-                        <p>Try my projectOne project</p>
-                    </section>
-                  <div class="grid-item">2</div>
-                  <div class="grid-item">3</div>
-                  <div class="grid-item">4</div>
-                  <div class="grid-item">5</div>
-                  <div class="grid-item">6</div>
-                </div>
                 <div class="btn-con">
                     <a href="" class="main-btn">
                         <span class="btn-text">Download Resume</span>
@@ -50,12 +37,24 @@
             </div>
         </div>
     </header>
+
     <main>
-        <section class="section sec2 git" id="github"></section>
-        <section class="section sec3 linkedin" id="linkedin"></section>
-        <section class="section sec4 contact" id="contact"></section>
+        <section class="section sec2 git" id="github">
+            <h2>GitHub Projects</h2>
+            <!-- Add your GitHub projects or links here -->
+        </section>
+
+        <section class="section sec3 linkedin" id="linkedin">
+            <h2>LinkedIn</h2>
+            <!-- Add your LinkedIn information or links here -->
+        </section>
+
+        <section class="section sec4 contact" id="contact">
+            <h2>Contact Me</h2>
+            <!-- Add your contact details or a contact form here -->
+        </section>
     </main>
-    
+
     <div class="controls">
         <div class="control control-2" data-id="github">
             <a href="https://github.com/Maggie-Duhart" target="_blank" rel="noopener noreferrer">
@@ -73,6 +72,8 @@
             </a>
         </div>
     </div>
+
     <script src="app.js"></script>
-</body>
+    <script src="script.js"></script> <!-- Add your JavaScript file -->
+ </body>
 </html>
