@@ -20,6 +20,38 @@
     color: var(--color-white);
     transition: all 0.3s ease;
   }
+
+  header {
+    height: auto;
+    text-align: center;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-content .left-header {
+    order: 2;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header-content .left-header .image {
+    margin: 0 auto;
+  }
+
+  .header-content .right-header {
+    order: 1;
+    padding: 0;
+  }
+
+  .controls {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /* Styles for tablets and small desktop screens */
@@ -41,7 +73,6 @@
     margin-top: -240px;
   }
 }
-
 
 * {
   margin: 0;
@@ -198,18 +229,5 @@ header {
   transform: scale(1.2); 
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
+/* Add more styling as needed */
 
