@@ -5,22 +5,6 @@
     padding-bottom: 120px;
   }
 
-  .controls {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    transform: translateX(-50%);
-  }
-
-  .controls .control {
-    font-size: 24px;
-    margin: 0 10px;
-    color: var(--color-white);
-    transition: all 0.3s ease;
-  }
-
   header {
     height: auto;
     text-align: center;
@@ -31,24 +15,25 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 0;
   }
 
   .header-content .left-header {
     order: 2;
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 0;
   }
 
   .header-content .left-header .image {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 30px;
+    width: 30px;
     overflow: hidden;
     margin-left: 0;
   }
 
-  .header-content .left-header .image img {
+.header-content .left-header .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -63,18 +48,18 @@
   .header-content .right-header {
     order: 1;
     padding: 0;
+    margin-top: 10px
   }
 
   .controls {
-    margin-left: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
 /* Styles for tablets and small desktop screens */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .controls {
-    justify-content: flex-end;
     margin-top: -40px;
     right: 40%;
     transform: translateX(50%);
@@ -84,13 +69,13 @@
 /* Styles for larger desktop screens */
 @media screen and (min-width: 1025px) {
   .controls {
-    justify-content: flex-end;
     margin-right: 50px;
     right: 10%;
-    margin-top: -240px;
+    margin-top: -200px;
   }
 }
 
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -130,6 +115,7 @@ header {
   justify-content: center;
   flex-direction: column;
   background: var(--color-primary) center/cover no-repeat;
+  margin-top: -200px;
 }
 
 .header-content {
@@ -226,11 +212,51 @@ header {
   padding-right: 1rem;
 }
 
+#projects {
+  text-align: center;
+  margin: 50px auto; 
+  margin-top: -200px;
+}
+
+#projects h2 {
+  color: #ffffff;/* White color */
+  font-size: 40px; /* Font size 24 pixels */
+  text-align: center; /* Center-aligned text */
+  margin-bottom: 30px;
+}
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.project {
+  background-color: #4a4a4a; /* Adjust the background color as needed */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners if desired */
+  text-align: center;
+}
+
+.project a {
+  color: #ffffff; /* White link color */
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
 .controls {
   display: flex;
   justify-content: center;
-  margin-left: 150px;
-  margin-top: -250px;
+  margin-top: 20px;
 }
 
 .controls .control {
@@ -245,6 +271,16 @@ header {
   transform: scale(1.2);
 }
 
-/* Add more styling as needed */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+footer p {
+  color: #ffffff; /* White text color */
+  font-size: 12px; /* Adjust font size as needed */
+}
+
 
 
