@@ -211,13 +211,21 @@ header {
 .project-text {
   color: var(--color-white);
   font-weight: 600;
-  position: relative;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   border: 1px solid var(--color-white);
-  display: flex;
-  align-self: flex-start;
   padding: 0.7rem 1.5rem;
   transition: all 0.3s ease;
 }
+
+.project-text a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+
 
 .header-content .right-header .btn-text {
   padding-right: 1rem;
