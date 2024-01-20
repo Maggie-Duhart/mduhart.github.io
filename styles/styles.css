@@ -164,28 +164,41 @@ header {
   filter: grayscale(0);
 }
 
-.header-content .right-header {
+.header-content .right-header,
+.project-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 2rem;
 }
 
-.header-content .right-header .name {
+.header-content .right-header .name,
+.project-text {
   font-size: 3rem;
   color: var(--color-white);
   margin-bottom: 1rem;
 }
 
-.header-content .right-header .name span {
+.header-content .right-header .name span,
+.project-text {
   color: var(--color-white);
 }
 
-.header-content .right-header p {
+.header-content .right-header p,
+.project-text {
   color: var(--color-white);
   margin-bottom: 2rem;
   line-height: 1.5;
 }
+
+.project-text a {
+  color: #4a4a4a;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
 
 .header-content .right-header .btn-con {
   display: flex;
@@ -208,26 +221,6 @@ header {
   color: var(--color-primary);
 }
 
-.project-text {
-  color: var(--color-white);
-  font-weight: 600;
-  position: absolute;
-  top: 50%; /* Adjust this value to vertically center the text */
-  right: 2rem; /* Adjust this value to position it like header-right */
-  transform: translate(0, -50%);
-  padding: 0.7rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.project-text a {
-  color: var(--color-white);
-  text-decoration: underline;
-}
-
-.bold-link {
-  font-weight: bold;
-}
-
 
 .header-content .right-header .btn-text {
   padding-right: 1rem;
@@ -240,9 +233,9 @@ header {
 }
 
 #projects h2 {
-  color: #ffffff;/* White color */
-  font-size: 40px; /* Font size 24 pixels */
-  text-align: center; /* Center-aligned text */
+  color: #ffffff;
+  font-size: 40px; 
+  text-align: center; 
   margin-bottom: 30px;
 }
 
@@ -251,20 +244,20 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 900px; /* Set a maximum width for the grid */
-  margin: 0 auto; /* Center the grid horizontally */
+  max-width: 900px; 
+  margin: 0 auto; 
 }
 
 .project {
-  background-color: #4a4a4a; /* Adjust the background color as needed */
-  color: #ffffff; /* White text color */
+  background-color: #4a4a4a; 
+  color: #ffffff; 
   padding: 20px;
-  border-radius: 10px; /* Add rounded corners if desired */
+  border-radius: 10px; 
   text-align: center;
 }
 
 .project a {
-  color: #ffffff; /* White link color */
+  color: #ffffff; 
   text-decoration: none;
   display: block;
   margin-top: 10px;
