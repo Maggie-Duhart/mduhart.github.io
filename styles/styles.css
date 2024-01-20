@@ -208,20 +208,25 @@ header {
   color: var(--color-primary);
 }
 
+
 .project-text {
   color: var(--color-white);
   font-weight: 600;
-  position: absolute;
-  top: 50%; /* Adjust this value to vertically center the text */
-  right: 2rem; /* Adjust this value to position it like header-right */
-  transform: translate(0, -50%);
+  top: 50%;
+  right: 4rem;
+  transform: translate(40%, -50%);
   padding: 0.7rem 1.5rem;
   transition: all 0.3s ease;
+  position: absolute;
+  margin-top: -20px;
+  margin-right: 500px;
 }
 
+
 .project-text a {
-  color: var(--color-white);
-  text-decoration: underline;
+  color: #4a4a4a;
+  font-weight: bold;
+  
 }
 
 .bold-link {
