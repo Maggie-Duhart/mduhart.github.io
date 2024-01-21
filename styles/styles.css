@@ -20,7 +20,7 @@
 
   .header-content .left-header {
     order: 2;
-    position: relative;
+    position: absolute;
     top: 10px;
     left: 0;
   }
